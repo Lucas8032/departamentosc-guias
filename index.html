@@ -1,201 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucas Marques Amaral</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LUCAS MARQUES AMARAL | Manutenção de Computadores</title>
+<meta name="description" content="07.928.298 LUCAS MARQUES AMARAL, CNPJ 07.928.298/0001-43, em Cachoeirinha/RS. Reparação e manutenção de computadores e equipamentos periféricos.">
 
 <style>
-body{
-margin:0;
-font-family:"Segoe UI",Arial,sans-serif;
-background:#f4f6f9;
-color:#333;
-}
-header{
-background:linear-gradient(135deg,#0a2a4f,#154a8a);
-padding:25px 40px;
-color:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-header h1{
-margin:0;
-font-size:26px;
-font-weight:600;
-}
-nav a{
-color:#fff;
-margin-left:25px;
-text-decoration:none;
-}
-.hero{
-padding:100px 20px;
-text-align:center;
-background:url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600') center/cover no-repeat;
-color:#fff;
-}
-.hero h2{
-font-size:42px;
-text-shadow:0 3px 8px rgba(0,0,0,.4);
-}
-.hero p{
-font-size:20px;
-text-shadow:0 2px 6px rgba(0,0,0,.4);
-}
-section{
-max-width:1100px;
-margin:60px auto;
-padding:40px;
-background:#fff;
-border-radius:12px;
-box-shadow:0 4px 16px rgba(0,0,0,.1);
-}
-h2{
-color:#0a2a4f;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-.card{
-background:#f9fbfd;
-padding:25px;
-border-radius:12px;
-border:1px solid #e3e9f0;
-transition:.2s;
-}
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 4px 16px rgba(0,0,0,.1);
-}
-.card h3{
-color:#154a8a;
-}
-footer{
-background:#0a2a4f;
-padding:25px;
-color:#fff;
-text-align:center;
-margin-top:60px;
-}
-footer a{
-color:#79b8ff;
-text-decoration:none;
-}
+:root{--p:#244f73;--p2:#2f79a8;--d:#102738;--t:#172534;--m:#657483;--l:#dce5eb;--s:#f3f7fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--t);line-height:1.65}a{color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--l);z-index:20}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;color:var(--p);text-decoration:none}nav a{margin-left:15px;text-decoration:none;font-size:.87rem;font-weight:700;color:#536575}
+.hero{min-height:570px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(16,39,56,.97),rgba(16,39,56,.72)),url('https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=1600&q=82') center/cover}.hero h1{font-size:clamp(2.3rem,5vw,4.6rem);line-height:1.03;max-width:850px;margin:14px 0}.hero p{max-width:790px;color:#e5edf3;font-size:1.06rem}.tag{display:inline-block;border:1px solid #ffffff55;padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:900}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:800;margin:12px 8px 0 0}.btn1{background:#fff;color:var(--p)}.btn2{border:1px solid #ffffff66;color:#fff}.btnmain{background:var(--p2);color:#fff}.btnsoft{background:#eaf3f8;color:var(--p)}
+section{padding:72px 0}.soft{background:var(--s)}.kicker{color:var(--p2);font-weight:900;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}h2{font-size:clamp(1.8rem,3vw,2.8rem);margin:6px 0 12px}.lead{color:var(--m);max-width:850px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--l);margin-top:24px}th,td{padding:14px 16px;border-bottom:1px solid var(--l);text-align:left;vertical-align:top}th{width:31%;background:#fafcfd}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:28px}figure,.card{background:#fff;border:1px solid var(--l);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #0000000d}.big img{width:100%;height:420px;object-fit:cover}.side{display:grid;gap:18px}.small img{width:100%;height:196px;object-fit:cover}figcaption{padding:10px 14px;color:var(--m);font-size:.9rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.body{padding:20px}.body p{color:var(--m)}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.check{border:1px solid var(--l);border-radius:14px;padding:17px;background:#fff}.check strong{display:block;color:var(--p);margin-bottom:4px}
+.form{max-width:760px;margin:auto;background:#fff;border:1px solid var(--l);border-radius:16px;padding:24px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:800;font-size:.82rem}input,textarea{width:100%;padding:13px;border:1px solid var(--l);border-radius:10px;margin:6px 0 14px}textarea{min-height:120px}.meta{max-width:760px;margin:20px auto 0;text-align:center;color:var(--m);line-height:1.9}
+footer{background:var(--d);color:#e8eef2;padding:38px 0}footer a{color:#fff;text-decoration:none}.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:24px}
+@media(max-width:900px){nav{display:none}.gallery,.grid3,.checks,.foot{grid-template-columns:1fr}}@media(max-width:650px){.row{grid-template-columns:1fr}.hero{min-height:500px}}
 </style>
 
 </head>
-
 <body>
 
-<header>
-
-<h1>Lucas Marques Amaral</h1>
-
+<header><div class="container nav">
+<a class="brand" href="#inicio">LUCAS MARQUES AMARAL</a>
 <nav>
-<a href="index.html">Início</a>
-<a href="politica-de-privacidade.html">Política de Privacidade</a>
+<a href="#empresa">Empresa</a><a href="#servicos">Serviços</a><a href="#operacao">Operação comercial</a><a href="#conteudo">Conteúdo</a><a href="#contato">Contato</a><a href="politica-de-privacidade.html">Privacidade</a><a href="#termos">Termos</a>
 </nav>
+</div></header>
 
-</header>
+<main>
+<section class="hero" id="inicio"><div class="container">
+<span class="tag">EMPRESA IDENTIFICADA • CNPJ ATIVO</span>
+<h1>Reparação e manutenção de computadores</h1>
+<p><strong>07.928.298 LUCAS MARQUES AMARAL</strong>, CNPJ <strong>07.928.298/0001-43</strong>, com cadastro em Cachoeirinha/RS. A atividade principal registrada é <strong>reparação e manutenção de computadores e de equipamentos periféricos</strong>.</p>
+<a class="btn btn1" href="#servicos">Conhecer os serviços</a>
+<a class="btn btn2" href="#contato">Entrar em contato</a>
+</div></section>
 
-<div class="hero">
+<section id="empresa"><div class="container">
+<span class="kicker">Quem somos</span>
+<h2>Identificação da empresa</h2>
+<p class="lead">Dados empresariais apresentados de forma clara para identificar a empresa responsável pelo site, pelo atendimento e pelos serviços divulgados.</p>
 
-<h2>Assistência Técnica em Computadores</h2>
+<table>
+<tr><th>Nome empresarial</th><td>07.928.298 LUCAS MARQUES AMARAL</td></tr>
+<tr><th>CNPJ</th><td>07.928.298/0001-43</td></tr>
+<tr><th>Data de abertura</th><td>06/04/2006</td></tr>
+<tr><th>Atividade principal</th><td>95.11-8-00 — Reparação e manutenção de computadores e de equipamentos periféricos</td></tr>
+<tr><th>Situação cadastral</th><td>Ativa</td></tr>
+<tr><th>Endereço</th><td>Estrada dos Capistranos — Jardim Betânia — Cachoeirinha/RS — CEP 94970-460</td></tr>
+</table>
 
-<p>Serviços especializados em manutenção, reparo e suporte para computadores e equipamentos periféricos.</p>
-
+<div class="gallery">
+<figure class="big">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=82" alt="Manutenção de computador">
+<figcaption>Diagnóstico e manutenção de computadores</figcaption>
+</figure>
+<div class="side">
+<figure class="small"><img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=900&q=82" alt="Componentes de computador"><figcaption>Verificação de componentes e periféricos</figcaption></figure>
+<figure class="small"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=82" alt="Computador em manutenção"><figcaption>Suporte técnico para equipamentos de informática</figcaption></figure>
 </div>
-
-<section>
-
-<h2>Quem Somos</h2>
-
-<p>
-A empresa <strong>07.928.298 Lucas Marques Amaral</strong>,
-fundada em <strong>06/04/2006</strong>,
-está localizada na cidade de
-<strong>Cachoeirinha - RS</strong>.
-</p>
-
-<p>
-Inscrita no CNPJ
-<strong>07.928.298/0001-43</strong>,
-atua no segmento de
-<strong>95.11-8-00 - Reparação e manutenção de computadores e de equipamentos periféricos</strong>,
-mantendo sua situação cadastral
-<strong>Ativa</strong>.
-</p>
-
-</section>
-
-<section>
-
-<h2>Nossos Serviços</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Manutenção de Computadores</h3>
-<p>Diagnóstico, reparo e otimização para notebooks e desktops.</p>
 </div>
+</div></section>
 
-<div class="card">
-<h3>Suporte Técnico</h3>
-<p>Atendimento especializado para resolver problemas de hardware e software.</p>
+<section class="soft" id="servicos"><div class="container">
+<span class="kicker">O que fazemos</span>
+<h2>Serviços relacionados à atividade cadastrada</h2>
+<p class="lead">A empresa atua com reparação e manutenção de computadores e equipamentos periféricos, conforme sua atividade principal registrada.</p>
+
+<div class="grid3">
+<article class="card"><div class="body"><h3>Diagnóstico técnico</h3><p>Avaliação do equipamento para identificar falhas de funcionamento e necessidades de manutenção.</p></div></article>
+<article class="card"><div class="body"><h3>Manutenção de computadores</h3><p>Serviços de reparação e manutenção em computadores, de acordo com o diagnóstico e o escopo aprovado.</p></div></article>
+<article class="card"><div class="body"><h3>Equipamentos periféricos</h3><p>Verificação e manutenção de periféricos compatíveis com a atividade da empresa.</p></div></article>
 </div>
+</div></section>
 
-<div class="card">
-<h3>Atualização de Equipamentos</h3>
-<p>Instalação de SSD, memória RAM e melhorias de desempenho.</p>
+<section id="operacao"><div class="container">
+<span class="kicker">Operações comerciais</span>
+<h2>Como funciona a relação comercial</h2>
+<p class="lead">A empresa responsável e o prestador final são identificados para que o cliente saiba quem realiza o atendimento e a execução do serviço contratado.</p>
+
+<div class="checks">
+<div class="check"><strong>Empresa responsável</strong>07.928.298 LUCAS MARQUES AMARAL, CNPJ 07.928.298/0001-43, é responsável por este site e pelas informações comerciais apresentadas.</div>
+<div class="check"><strong>Prestador final do serviço</strong>Os serviços de manutenção e reparação divulgados neste site são prestados diretamente pela própria empresa.</div>
+<div class="check"><strong>Atendimento</strong>O atendimento ao cliente é realizado diretamente pela empresa pelos canais oficiais divulgados nesta página.</div>
+<div class="check"><strong>Escopo</strong>Equipamento, defeito apresentado, diagnóstico, peças eventualmente necessárias e serviço autorizado devem ser definidos antes da execução.</div>
+<div class="check"><strong>Condições comerciais</strong>Valores, forma de pagamento, prazo estimado e demais condições são informados antes da confirmação do serviço.</div>
+<div class="check"><strong>Pós-atendimento</strong>Dúvidas e solicitações posteriores ao serviço podem ser tratadas diretamente com a empresa pelos canais oficiais.</div>
 </div>
+</div></section>
 
-<div class="card">
-<h3>Assistência Preventiva</h3>
-<p>Limpeza, manutenção preventiva e orientações para aumentar a vida útil dos equipamentos.</p>
+<section class="soft" id="conteudo"><div class="container">
+<span class="kicker">Informação útil</span>
+<h2>Conteúdos para orientar o atendimento</h2>
+
+<div class="grid3">
+<article class="card"><div class="body"><h3>Diagnóstico</h3><p>Uma avaliação inicial ajuda a identificar a origem do problema antes de definir o reparo adequado.</p></div></article>
+<article class="card"><div class="body"><h3>Manutenção preventiva</h3><p>Limpeza, inspeção e verificação periódica podem contribuir para o bom funcionamento dos equipamentos.</p></div></article>
+<article class="card"><div class="body"><h3>Autorização do serviço</h3><p>O escopo, o prazo e os custos devem ser confirmados com o cliente antes da execução do reparo.</p></div></article>
 </div>
+</div></section>
 
+<section class="soft" id="contato"><div class="container">
+<span class="kicker">Fale conosco</span>
+<h2>Entre em contato</h2>
+<p class="lead">Preencha o formulário ou utilize diretamente os contatos disponíveis abaixo.</p>
+
+<form class="form">
+<div class="row">
+<div><label>Nome</label><input placeholder="Seu nome"></div>
+<div><label>Telefone</label><input placeholder="(00) 00000-0000"></div>
 </div>
+<label>E-mail</label><input type="email" placeholder="voce@email.com">
+<label>Mensagem</label><textarea placeholder="Como podemos ajudar?"></textarea>
+<a class="btn btnmain" href="mailto:universo.games@outlook.com">Enviar mensagem</a>
+<a class="btn btnsoft" href="mailto:universo.games@outlook.com">Enviar e-mail direto</a>
+<a class="btn btnsoft" href="https://api.whatsapp.com/send?phone=555185036752" target="_blank" rel="noopener">WhatsApp</a>
+</form>
 
-</section>
-
-<section>
-
-<h2>Nossos Valores</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Missão</h3>
-<p>Oferecer soluções rápidas e confiáveis em manutenção de equipamentos de informática.</p>
+<div class="meta">
+<strong>Telefone/WhatsApp:</strong> <a href="tel:555185036752">(51) 8503-6752</a><br>
+<strong>E-mail:</strong> <a href="mailto:universo.games@outlook.com">universo.games@outlook.com</a><br>
+<strong>Endereço:</strong> Estrada dos Capistranos — Jardim Betânia — Cachoeirinha/RS — CEP 94970-460
 </div>
+</div></section>
 
-<div class="card">
-<h3>Visão</h3>
-<p>Ser referência em qualidade, eficiência e atendimento técnico especializado.</p>
-</div>
+<section id="termos"><div class="container">
+<span class="kicker">Condições</span>
+<h2>Termos de Uso e Condições Comerciais</h2>
+<p>Este site apresenta informações institucionais da empresa, seus serviços e seus canais de contato. A própria empresa é responsável pela prestação dos serviços divulgados.</p>
+<p>Diagnóstico, peças, escopo, valores, prazo, formas de pagamento e demais condições devem ser confirmados antes da execução do serviço.</p>
+<p>Alterações, cancelamentos e demais solicitações devem ser tratadas diretamente com a empresa e conforme a legislação aplicável.</p>
+</div></section>
+</main>
 
-<div class="card">
-<h3>Valores</h3>
-<p>Compromisso, ética, transparência e excelência no atendimento aos clientes.</p>
-</div>
+<footer><div class="container"><div class="foot">
+<div><h3>LUCAS MARQUES AMARAL</h3><p>07.928.298 LUCAS MARQUES AMARAL</p><p>CNPJ: 07.928.298/0001-43</p><p>Estrada dos Capistranos — Jardim Betânia — Cachoeirinha/RS — CEP 94970-460</p></div>
+<div><h4>Institucional</h4><p><a href="#empresa">Empresa</a><br><a href="#servicos">Serviços</a><br><a href="#operacao">Operação comercial</a><br><a href="#conteudo">Conteúdo</a><br><a href="#contato">Contato</a></p></div>
+<div><h4>Políticas</h4><p><a href="politica-de-privacidade.html">Política de Privacidade</a><br><a href="#termos">Termos de Uso</a><br><a href="mailto:universo.games@outlook.com">universo.games@outlook.com</a><br><a href="tel:555185036752">(51) 8503-6752</a></p></div>
+</div></div></footer>
 
-</div>
-
-</section>
-
-<footer>
-
-© 2025 Lucas Marques Amaral • CNPJ 07.928.298/0001-43
-
-<br><br>
-
-<a href="politica-de-privacidade.html">Política de Privacidade</a>
-
-</footer>
-
-</body>
-</html>
+</body></html>
